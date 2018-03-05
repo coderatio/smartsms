@@ -1,0 +1,22 @@
+{
+    "name": "coderatio/smartsms",
+    "description": "A php library for smartsms solutions",
+    "type": "library",
+    "require": {
+        "php": ">=5.3"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Josiah Ovye Yahaya",
+            "email": "josiahoyahaya@gmail.com"
+        }
+    ],
+    "autoload": {
+        "classmap": [
+            "Foundation",
+            "Services"
+        ]
+    },
+    "minimum-stability": "dev"
+}
