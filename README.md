@@ -19,12 +19,6 @@ var_dump($sms->asObject()); // Will return object response
 
 ```
 
-## Get balance
-
-```php
-echo Smartsms::init($token)->getBalance();
-```
-
 ## Other methods
 
 ```php
@@ -37,6 +31,12 @@ $sms->sender(); // Takes the sender name. Same as from();
 $sms->url; // Get or set new api url.
 $sms->routing; // Get default routing or set new one.
 ```
+
+## Get balance
+```php
+echo Smartsms::init($token)->getBalance();
+```
+
 ## Upgrades
 1. Sending group of numbers with names
 2. Sending from a csv, excel, txt or pdf file
