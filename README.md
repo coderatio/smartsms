@@ -15,17 +15,13 @@ echo $sms->response(); // Will return json
 
 // OR
 
-$sms->asObject(); // Will return object response
+var_dump($sms->asObject()); // Will return object response
 
 ```
 
 ## Get balance
 
 ```php
-require 'vendor/autoload.php';
-use Coderatio\Smartsms\Smartsms;
-$token = "XXXXXXXXXXXXXXXXXXXXXXXX";
-
 echo Smartsms::init($token)->getBalance();
 ```
 
@@ -45,10 +41,14 @@ $sms->routing; // Get default routing or set new one.
 1. Sending group of numbers with names
 2. Sending from a csv, excel, txt or pdf file
 3. Scheduling messages
+
+## Contributing
+Please feel free to fork this package and contribute by submitting a pull request to enhance the functionalities.
+
 ## How can I thank you?
 Why not star the github repo? I'd love the attention! Why not share the link for this repository on Twitter or Facebook? Spread the word!
 
-Don't forget to follow me on [twitter!](https://twitter.com/josiahoyahaya)
+Don't forget to follow me on [twitter!](https://twitter.com/josiahoyahaya){:target="_blank"}
 
 Thanks! [Josiah O. Yahaya](https://github.com/coderatio).
 
