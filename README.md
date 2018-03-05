@@ -6,7 +6,7 @@ A flexible PHP library for smartsms solutions
 ```php
 require 'vendor/autoload.php';
 use Coderatio\Smartsms\Smartsms;
-$token = "XXXXXXXXXXXXXXXXXXXXXXXX";
+$token = "XXXXXXXXXXXXXXXXXXXXXXXX"; // Get your token at https://smartsmssolutions.com/sms/api-x-tokens
 
 $sms = Smartsms::init($token)->to("XXXXXXXXXXXX")->from("Valuebeam")
     ->send("I would love to see you at the office by 4pm today.");
