@@ -26,13 +26,13 @@ require 'vendor/autoload.php';
 use Coderatio\Smartsms\Smartsms;
 $token = "XXXXXXXXXXXXXXXXXXXXXXXX";
 
-echo Smartsms::init($token)->to(XXXXX)->getBalance();
+echo Smartsms::init($token)->getBalance();
 ```
 
-## Available methods
+## Other methods
 
 ```php
-$sms->message(); // Takes the message you want to send
+$sms->message(); // Takes the message you want to send. Same as putting the message into send() method
 $sms->sender(); // Takes the sender name. Same as from();
 ```
 
