@@ -8,13 +8,25 @@ require 'vendor/autoload.php';
 use Coderatio\Smartsms\Smartsms;
 $token = "XXXXXXXXXXXXXXXXXXXXXXXX";
 
-$sms = Smartsms::init($token)->to(XXXXX)->from("Valuebeam")
+$sms = Smartsms::init($token)->to("XXXXXXXXXXXX")->from("Valuebeam")
     ->send("I would love to see you at the office by 4pm today.");
-    
-echo $sms->response;
+
+echo $sms->response(); // Will return json
+
 // OR
 
-echo $sms->response();
+$sms->asObject(); // Will return object response
+
+```
+
+## Get balance
+
+```php
+require 'vendor/autoload.php';
+use Coderatio\Smartsms\Smartsms;
+$token = "XXXXXXXXXXXXXXXXXXXXXXXX";
+
+echo Smartsms::init($token)->to(XXXXX)->getBalance();
 ```
 
 ## Available methods
@@ -33,5 +45,12 @@ $sms->routing; // Get default routing or set new one.
 1. Sending group of numbers with names
 2. Sending from a csv, excel, txt or pdf file
 3. Scheduling messages
+## How can I thank you?
+Why not star the github repo? I'd love the attention! Why not share the link for this repository on Twitter or Facebook? Spread the word!
+
+Don't forget to follow me on [twitter!](https://twitter.com/josiahoyahaya)
+
+Thanks! [Josiah O. Yahaya](https://github.com/coderatio).
+
 ## License
-This library is licensed under the MIT license. Please read the license file for more details.
+The MIT License (MIT). Please see [License File](https://github.com/coderatio/smartsms/blob/master/LICENSE) for more information.
