@@ -33,3 +33,5 @@ $sms->routing; // Get default routing or set new one.
 1. Sending group of numbers with names
 2. Sending from a csv, excel, txt or pdf file
 3. Scheduling messages
+## License
+This library is licensed under the MIT license. Please read the license file for more details.
