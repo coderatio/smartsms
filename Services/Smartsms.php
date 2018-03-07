@@ -51,6 +51,7 @@ class Smartsms
     {
         $this->config = new Configurator();
         self::$token = $this->config->getConfig('token');
+        $this->routing = $this->config->getConfig('routing');
     }
 
     /**

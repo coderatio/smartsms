@@ -8,7 +8,7 @@ $config = [
     /**
      * Set this 3 if you want to force delivering messages to numbers on DND
      */
-    'routing' => 3
+    'routing' => getenv('SMARTSMS_ROUTING')
 ];
 
 return $config;
