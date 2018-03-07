@@ -16,6 +16,9 @@
         "classmap": [
             "Foundation",
             "Services"
+        ],
+        "files": [
+            "config.php"
         ]
     },
     "minimum-stability": "dev"

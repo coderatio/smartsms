@@ -159,4 +159,10 @@ class Configurator
         return $response;
 
     }
+
+    public function getConfig($index)
+    {
+        global $config;
+        return $config[$index];
+    }
 }

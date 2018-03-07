@@ -50,6 +50,7 @@ class Smartsms
     public function __construct()
     {
         $this->config = new Configurator();
+        self::$token = $this->config->getConfig('token');
     }
 
     /**
@@ -150,9 +151,11 @@ class Smartsms
      * @param $token
      * @return Smartsms
      */
-    public static function init($token)
+    public static function init($token = '')
     {
-        self::$token = $token;
+        if ($token != '') {
+            self::$token = $token;
+        }
 
         return new Smartsms();
     }
