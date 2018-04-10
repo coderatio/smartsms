@@ -1,4 +1,4 @@
-# smartsms
+# Smartsms
 A flexible PHP library for smartsms solutions
 
 # Installation
@@ -12,7 +12,9 @@ require('vendor/autoload.php');
 
 use Coderatio\Smartsms\Smartsms;
 
-$config['token'] = env('SMARTSMS_TOKEN'); // Or If you dont have .env file in your project, your can just put the code here.
+$config['token'] = env('SMARTSMS_TOKEN'); 
+// Or 
+$config['token'] = "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
 
 $sms = Smartsms::init($config)
     ->to('XXX-XX-XXXX-XXXX')
